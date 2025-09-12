@@ -1,5 +1,21 @@
+*{
+    font-size: 14px;
+}
+
 .logo {
-    height: 120px;
+    height: 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel {
+    position: relative;
+    z-index: 0;
+    padding-top: 120px;
 }
 
 .bg-header {
@@ -8,6 +24,19 @@
 
 .img-h .carousel-item img {
     height: 500px;
+    object-fit: cover;
+}
+
+@media(max-width:500px) {
+    .img-h .carousel-item img {
+        height: auto;
+    }
+}
+
+@media(max-width:1000px){
+    .img-h .carousel-item img {
+        height: auto;
+    }
 }
 
 .quadrado .cont h2 {
@@ -44,4 +73,122 @@
 
 .relacao-img img {
     height: 250px;
+}
+
+/* ======================== Banner Delivery ======================== */
+.bg-banner {
+    background-color: #dad603;
+    margin: 20px auto 40px;
+}
+
+.col-dir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-dir h2 {
+    font-size: 2.6rem;
+    /* rem é definido com base na medida de fonte escrito na classe pai(*) */
+}
+
+.col-dir h3 {
+    font-size: 2.2rem;
+}
+
+/* ===================== Contato ==================== */
+
+.contato {
+    width: 100%;
+    background-color: #333;
+    padding: 30px 0;
+}
+
+.contato h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contato span, .contato i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.contato i {
+    margin-right: 10px;
+}
+
+.icon-large i{
+    font-size: 30px;
+}
+
+.linha-form {
+    margin: 5px 0;
+}
+
+.contato input, .contato textarea{
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.contato textarea {
+    resize: none;
+}
+
+.contato input[type=submit] {
+    width: fit-content;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    float: right;
+}
+
+::placeholder {
+    color: #666;
+}
+
+/* ===================== Rodapé ==================== */
+.bg-footer {
+    width: 100%;
+    background-color: #ccc;
+    margin-top: -5px;
+    padding: 15px;
+}
+
+.bg-footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ================================================= */
+
+.espaco-topo {
+    padding-top: 130px;
+}
+.banho {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000;
+    width: 30%;
+    color: #fff;
+}
+
+.banho h1 {
+    font-size: 25px;
+}
+
+.img-banho {
+    margin-top: 20px;
+}
+
+.saiba-mais {
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 30px;
 }
