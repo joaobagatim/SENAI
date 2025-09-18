@@ -165,7 +165,7 @@ header {
     font-size: 15px;
 }
 
-/* ================================================= */
+/* =========================BANHO E TOSA========================== */
 
 .espaco-topo {
     padding-top: 130px;
@@ -191,4 +191,71 @@ header {
     background-color: #000;
     color: #fff;
     padding: 2px 30px;
+}
+
+.pet-care h1 {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pet-care i {
+    font-size: 30px;
+}
+
+
+.vacina-img img, .banho-img img {
+    width: 100%;
+}
+
+/* ======================= ADESTRAMENTO ======================= */
+
+.adestramento {
+    padding: 0%;
+}
+.adestramento img {
+    width: 100%;
+}
+
+.texto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+}
+.imagens img {
+    width: 200px;
+    height: 150px;
+    margin-left: 5px;
+}
+
+.adestramento-perguntas h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.accordion {
+    margin-bottom: 40px;
+}
+
+/* ====================== HOTEL RESORT ====================== */
+
+.texto-resort p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.texto-resort h2 {
+    margin-bottom: 40px;
+}
+
+.imagens-resort {
+    margin-bottom: 40px;
 }
