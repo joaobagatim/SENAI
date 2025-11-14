@@ -1,0 +1,15 @@
+{
+  "name": "testesunitarios",
+  "version": "1.0.0",
+  "main": "01-teste.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^30.2.0"
+  }
+}
