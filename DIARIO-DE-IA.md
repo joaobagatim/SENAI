@@ -17,6 +17,7 @@ Alguns dos prompts e perguntas que mais contribuíram durante o desenvolvimento 
 * "Como comparar os dados retornados pela API com os valores apresentados na UI?"
 * "Documente esse bug no formato solicitado pelo desafio."
 * "Quais outros testes de API poderiam agregar valor ao projeto?"
+* "Ao finalizar o trabalho, transforme os cenários testados em BDD utilizando Dado, Quando e Então."
 
 ## Onde a IA ajudou bem
 
@@ -44,6 +45,16 @@ Na RN01, por exemplo, foram testados manualmente e por automação valores como:
 A partir da execução desses cenários, identifiquei que a aplicação validava corretamente alguns casos, mas permitia concluir revisões com valores fora dos limites estabelecidos.
 
 Outro ponto em que a IA ajudou foi na organização dos bugs encontrados no formato solicitado pelo desafio, facilitando a padronização do `RELATORIO-DE-BUGS.md`.
+
+Ao final do trabalho, também utilizei a IA para transformar os cenários já executados e validados em uma documentação no formato BDD. Nesse momento, os testes já estavam concluídos e os resultados já haviam sido analisados por mim. A IA foi utilizada apenas para organizar cada cenário utilizando a estrutura:
+
+```text
+Dado que...
+Quando...
+Então...
+```
+
+Essa etapa teve como objetivo melhorar a legibilidade da documentação e deixar mais claro o comportamento esperado de cada cenário testado.
 
 ## Testes e análises realizados por mim
 
@@ -171,6 +182,32 @@ Porém, o elemento permanecia com o atributo `hidden`.
 
 A análise manual confirmou que o problema estava no comportamento da aplicação.
 
+## Uso da IA na documentação em BDD
+
+Após finalizar a execução, análise e validação dos testes, utilizei a IA para me auxiliar na transformação dos cenários já testados em documentação no formato **BDD (Behavior-Driven Development)**.
+
+Nesse momento, os testes já haviam sido executados e seus resultados já estavam validados por mim. A IA foi utilizada somente para organizar os cenários de maneira mais clara e padronizada utilizando:
+
+```text
+Dado que...
+Quando...
+Então...
+```
+
+Os cenários BDD foram elaborados com base nos testes que já haviam sido realizados, incluindo:
+
+* autenticação;
+* catálogo;
+* busca;
+* favoritos;
+* fluxo principal E2E;
+* regras RN01 a RN06;
+* testes de API.
+
+Após a geração do BDD, revisei os textos para garantir que cada cenário representasse corretamente o comportamento que havia sido testado durante o desafio.
+
+Não foram adicionados no BDD resultados ou comportamentos que não tivessem sido previamente executados ou analisados.
+
 ## Decisões tomadas contra sugestões da IA
 
 Em determinado momento, foi sugerido aumentar ainda mais a cobertura de API, reproduzindo diretamente pela API todos os bugs encontrados nas RN01–RN06.
@@ -191,14 +228,16 @@ O próprio desafio informa que os testes de API são um diferencial, e não um r
 
 considerei que a cobertura de API já demonstrava de forma suficiente o conhecimento necessário.
 
-Preferi utilizar o tempo restante para revisar a automação, melhorar a documentação e organizar a entrega.
+Preferi utilizar o tempo restante para revisar a automação, melhorar a documentação, estruturar os cenários em BDD e organizar a entrega.
 
 ## Principais aprendizados
 
-A IA ajudou principalmente como ferramenta de apoio para acelerar algumas etapas, levantar possibilidades de cenários e revisar a estrutura dos testes.
+A IA ajudou principalmente como ferramenta de apoio para acelerar algumas etapas, levantar possibilidades de cenários, revisar a estrutura dos testes e organizar a documentação.
 
 Porém, a parte mais importante do processo continuou sendo a análise do comportamento real da aplicação.
 
 Durante o desafio, algumas das descobertas mais relevantes aconteceram justamente quando o resultado de um teste não correspondia ao que eu havia observado manualmente. Nesses casos, foi necessário investigar, revisar o teste e confirmar o comportamento antes de registrar um bug.
+
+O uso da IA na criação do BDD também foi realizado somente após os cenários já terem sido executados e validados, servindo como apoio para organizar e documentar melhor o trabalho já realizado.
 
 Por isso, utilizei a IA como apoio à produtividade e à organização, mantendo a execução dos testes, investigação das evidências e decisão final sobre os defeitos encontrados sob minha própria análise de QA.

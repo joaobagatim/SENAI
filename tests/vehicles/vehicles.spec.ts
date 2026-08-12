@@ -1,5 +1,12 @@
 import { test, expect } from '@playwright/test';
 
+
+/*
+ * BDD-003 - Fluxo principal de login, manual e favorito
+ * Dado que o usuario esta autenticado no catalogo
+ * Quando abre o manual do Chevrolet Onix, retorna ao catalogo e favorita o veiculo
+ * Entao o contador de favoritos deve ser atualizado e o Chevrolet Onix deve aparecer na tela de favoritos
+ */
 test('deve fazer login, abrir um manual e favoritar um veículo', async ({ page }) => {
   await page.goto('/');
 
@@ -45,6 +52,12 @@ test('deve fazer login, abrir um manual e favoritar um veículo', async ({ page 
 
 
 // BUG 01
+/*
+ * BDD-004 - Busca sem resultado
+ * Dado que o usuario esta autenticado no catalogo
+ * Quando pesquisa por um veiculo inexistente
+ * Entao o sistema deve exibir a mensagem de estado vazio e nenhum card de veiculo deve permanecer visivel
+ */
 test.fail('deve exibir mensagem quando a busca não encontrar veículos', async ({ page }) => {
   await page.goto('/');
 
