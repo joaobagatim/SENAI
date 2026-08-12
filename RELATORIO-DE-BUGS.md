@@ -18,7 +18,7 @@
 * **Evidência:**
   Print da tela após a pesquisa por **“Ferrari”**, demonstrando o catálogo vazio sem mensagem de feedback. Evidência adicional pelo DevTools mostrando o elemento `empty-state` ainda com o atributo `hidden`. O comportamento também pode ser reproduzido pelo teste automatizado de busca sem resultados no Playwright.
 
-
+<!-- ========== -->
 
 ### [BUG-02] Sistema permite concluir revisão com quilometragem fora dos limites permitidos
 
@@ -51,6 +51,8 @@ Nenhuma mensagem de validação é apresentada nesses casos.
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+<!-- ========== -->
+
 ### [BUG-03] Sistema permite concluir revisão com data futura
 
 * **Severidade:** Alta
@@ -75,7 +77,7 @@ Nenhuma mensagem de validação é apresentada nesses casos.
   Teste automatizado no Playwright falhando ao esperar o elemento `revision-error` visível e print do histórico exibindo uma revisão preventiva concluída com a data `01/01/2099`.
 ![alt text](image-2.png)
 
-
+<!-- ========== -->
 
 ### [BUG-04] Sistema permite concluir revisão com dados obrigatórios da troca de óleo ausentes
 
@@ -104,7 +106,7 @@ Nenhuma mensagem de validação é apresentada nesses casos.
 * **Evidência:**
   Prints do histórico exibindo as revisões `12001 km` e `12002 km` com status **“Concluída”**, mesmo com dados obrigatórios da troca de óleo ausentes. Os testes automatizados no Playwright também falham ao esperar a exibição da mensagem de validação.
 
-
+<!-- ========== -->
 
 ### [BUG-05] Sistema permite concluir revisão com observações acima de 300 caracteres
 
@@ -129,7 +131,7 @@ Nenhuma mensagem de validação é apresentada nesses casos.
   Print do histórico exibindo a revisão `13003 km` com status **“Concluída”** e o texto informado no campo Observações. O teste automatizado no Playwright também falha ao esperar a exibição do elemento `revision-error` após o envio de 301 caracteres.
 ![alt text](image-3.png)
 
-
+<!-- ========== -->
 
 ### [BUG-06] Revisão concluída pode ser editada e retornar ao estado de rascunho
 
@@ -155,3 +157,27 @@ Nenhuma mensagem de validação é apresentada nesses casos.
 
 * **Evidência:**
   Teste automatizado no Playwright identificando `1` botão **“Editar”** em uma revisão concluída, quando o esperado era `0`. Em teste adicional, a revisão concluída `15002 km` foi aberta para edição, teve a quilometragem alterada para `15003 km` e foi salva novamente com status **“Rascunho”**.
+
+
+<!-- API -->
+
+### [BUG-07] Capacidade do tanque exibida na UI diverge do valor retornado pela API
+
+* **Severidade:** Alta
+* **Onde:** Tela de Manual do Veículo / Especificações técnicas / Campo Capacidade do tanque
+* **Passos para reproduzir:**
+
+1. Realizar login com credenciais válidas.
+2. Acessar o manual do **Chevrolet Onix**.
+3. Consultar a capacidade do tanque exibida na seção de fluidos.
+4. Consultar o endpoint `GET /api/vehicles/1/specs`.
+5. Comparar o valor retornado pela API com o valor apresentado na interface.
+
+* **Resultado esperado:**
+  A capacidade do tanque exibida na interface deve ser consistente com o valor retornado pela API. Para o Chevrolet Onix, a API retorna `fuelTankLiters: 44`, portanto a UI deve apresentar `44 L`.
+
+* **Resultado obtido:**
+  A API retorna `44 L`, porém a interface exibe `4,4 L`, apresentando uma capacidade dez vezes menor que o valor informado pelo backend.
+
+* **Evidência:**
+  Teste automatizado no Playwright comparando API e UI falha com o seguinte resultado: valor esperado `44 L` e valor recebido `4,4 L`. Evidência adicional disponível na tela do manual do Chevrolet Onix e na resposta do endpoint `/api/vehicles/1/specs`.

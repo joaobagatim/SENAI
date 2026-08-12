@@ -43,6 +43,7 @@ test('deve fazer login, abrir um manual e favoritar um veículo', async ({ page 
     .toContainText('Chevrolet Onix');
 });
 
+
 // BUG 01
 test.fail('deve exibir mensagem quando a busca não encontrar veículos', async ({ page }) => {
   await page.goto('/');

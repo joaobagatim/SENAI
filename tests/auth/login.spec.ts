@@ -14,6 +14,7 @@ test.describe('Autenticação', () => {
     await expect(page.getByTestId('user-name')).toContainText('Usuario QA');
   });
 
+  
   test('não deve realizar login com credenciais inválidas', async ({ page }) => {
     await page.goto('/');
 

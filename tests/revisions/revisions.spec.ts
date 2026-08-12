@@ -24,6 +24,7 @@ async function abrirRevisao(page: Page) {
   await expect(page.getByTestId('revision-view')).toBeVisible();
 }
 
+
 test.describe('Regras de negócio - Revisões', () => {
 
   test('RN01 - não deve concluir revisão sem quilometragem', async ({ page }) => {
@@ -42,6 +43,7 @@ test.describe('Regras de negócio - Revisões', () => {
       .toContainText('Quilometragem é obrigatória');
   });
 
+
 // BUG 02
   test('RN01 - não deve aceitar quilometragem negativa', async ({ page }) => {
     await login(page);
@@ -56,6 +58,7 @@ test.describe('Regras de negócio - Revisões', () => {
     // Deve ocorrer validação para valor abaixo do limite mínimo
     await expect(page.getByTestId('revision-error')).toBeVisible();
   });
+
 
   test('RN01 - deve aceitar quilometragem igual a 0', async ({ page }) => {
     await login(page);
@@ -78,6 +81,7 @@ test.describe('Regras de negócio - Revisões', () => {
         .toContainText('Concluída');
     });
 
+
   test('RN01 - deve aceitar quilometragem igual a 999999', async ({ page }) => {
     await login(page);
     await abrirRevisao(page);
@@ -99,6 +103,7 @@ test.describe('Regras de negócio - Revisões', () => {
         .toContainText('Concluída');
     });
 
+
 // BUG 02
   test.fail('RN01 - não deve aceitar quilometragem maior que 999999', async ({ page }) => {
     await login(page);
@@ -113,6 +118,7 @@ test.describe('Regras de negócio - Revisões', () => {
     // RN01: valores acima de 999999 devem ser rejeitados
     await expect(page.getByTestId('revision-error')).toBeVisible();
     });
+
 
   test('RN01 - não deve aceitar quilometragem decimal', async ({ page }) => {
     await login(page);
@@ -141,6 +147,7 @@ test.describe('Regras de negócio - Revisões', () => {
 
     await expect(page.getByTestId('revision-error')).toBeVisible();
     });
+
 
 // BUG 03
   test.fail('RN02 - não deve aceitar data futura', async ({ page }) => {
@@ -175,8 +182,7 @@ test.describe('Regras de negócio - Revisões', () => {
     await expect(page.getByTestId('revision-error'))
         .toContainText('Tipo');
     });
-
-
+  
 
 const tiposValidos = [
   { valor: 'preventiva', texto: 'Preventiva', quilometragem: '11001' },
@@ -207,6 +213,7 @@ for (const tipo of tiposValidos) {
   });
 }
 
+
 // BUG 04
   test.fail('RN04 - deve exigir tipo do óleo quando houver troca de óleo', async ({ page }) => {
     await login(page);
@@ -226,6 +233,7 @@ for (const tipo of tiposValidos) {
 
     await expect(page.getByTestId('revision-error')).toBeVisible();
     });
+
 
 // BUG 04
   test.fail('RN04 - deve exigir quantidade do óleo quando houver troca de óleo', async ({ page }) => {
@@ -375,6 +383,7 @@ for (const tipo of tiposValidos) {
         .toContainText('13002 km');
     });
 
+
 // BUG 05
   test('RN05 - não deve aceitar observações com mais de 300 caracteres', async ({ page }) => {
     await login(page);
@@ -444,6 +453,7 @@ for (const tipo of tiposValidos) {
         .toContainText('14002 km');
     });
 
+
   test('RN06 - revisão concluída não deve permitir edição', async ({ page }) => {
     await login(page);
     await abrirRevisao(page);
@@ -479,8 +489,6 @@ for (const tipo of tiposValidos) {
 
     await expect(botaoEditar).toHaveCount(0);
     });
-
-
 
 
   test('RN06 - revisão concluída não deve permitir edição', async ({ page }) => {
