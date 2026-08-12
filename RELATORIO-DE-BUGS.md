@@ -183,3 +183,77 @@ Nenhuma mensagem de validação é apresentada nesses casos.
 
 * **Evidência:**
   Teste automatizado no Playwright comparando API e UI falha com o seguinte resultado: valor esperado `44 L` e valor recebido `4,4 L`. Evidência adicional disponível na tela do manual do Chevrolet Onix e na resposta do endpoint `/api/vehicles/1/specs`.
+
+<!-- TESTES MANUAIS -->
+
+### [BUG-08] Busca de veículos diferencia letras maiúsculas e minúsculas
+
+* **Severidade:** Média
+* **Onde:** Tela de Catálogo / Componente de busca de veículos
+* **Passos para reproduzir:**
+
+1. Realizar login com credenciais válidas.
+2. Na tela de catálogo, localizar o campo de busca.
+3. Pesquisar pelo modelo utilizando a capitalização exibida no catálogo, por exemplo `Onix`.
+4. Confirmar que o veículo é encontrado.
+5. Repetir a busca utilizando `onix`, `ONIX` ou `OnIx`.
+6. Comparar os resultados apresentados.
+
+* **Resultado esperado:**
+  A busca deve encontrar o mesmo veículo independentemente do uso de letras maiúsculas ou minúsculas, considerando `Onix`, `onix`, `ONIX` e `OnIx` como termos equivalentes.
+
+* **Resultado obtido:**
+  A busca é case sensitive e o resultado depende da capitalização utilizada no termo pesquisado. Variações com letras maiúsculas e minúsculas deixam de retornar o veículo esperado.
+
+* **Evidência:**
+  Prints das buscas realizadas com diferentes combinações de letras maiúsculas e minúsculas, demonstrando a diferença nos resultados apresentados.
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+<!-- ========== -->
+
+### [BUG-09] Ordenação crescente por ano não é aplicada corretamente
+
+* **Severidade:** Média
+* **Onde:** Tela de Catálogo / Componente de ordenação por ano
+* **Passos para reproduzir:**
+
+1. Realizar login com credenciais válidas.
+2. Acessar a tela de catálogo de veículos.
+3. Utilizar o botão de ordenação por ano.
+4. Validar a ordenação do maior ano para o menor.
+5. Clicar novamente no botão para alterar a ordenação para o menor ano até o maior.
+6. Observar a ordem dos veículos apresentados.
+
+* **Resultado esperado:**
+  Ao alternar o botão de ordenação, a listagem deve ser reorganizada corretamente nos dois sentidos: do maior ano para o menor e do menor ano para o maior.
+
+* **Resultado obtido:**
+  A ordenação do maior ano para o menor funciona corretamente. Porém, ao alterar para a ordenação do menor ano para o maior, os veículos não são reorganizados conforme esperado.
+
+* **Evidência:**
+  Teste manual realizado no catálogo, alternando o botão de ordenação por ano e comparando a sequência dos veículos apresentada em cada estado.
+
+<!-- ========== -->
+
+### [BUG-10] Contador de favoritos não é decrementado ao desfavoritar um veículo
+
+* **Severidade:** Média
+* **Onde:** Tela de Catálogo / Componente de Favoritos / Contador de favoritos
+* **Passos para reproduzir:**
+
+1. Realizar login com credenciais válidas.
+2. Localizar o veículo **Chevrolet Onix** no catálogo.
+3. Favoritar o veículo.
+4. Verificar que o contador de favoritos é atualizado para `1`.
+5. Desfavoritar o mesmo veículo.
+6. Observar o contador de favoritos.
+
+* **Resultado esperado:**
+  Ao desfavoritar o único veículo favoritado, o contador deve ser atualizado de `1` para `0`.
+
+* **Resultado obtido:**
+  O veículo é desfavoritado, porém o contador permanece exibindo `1`.
+
+* **Evidência:**
+  Teste manual realizado no catálogo, favoritando e em seguida desfavoritando o Chevrolet Onix, com o contador permanecendo em `1` após a remoção do favorito.
