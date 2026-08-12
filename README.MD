@@ -41,6 +41,8 @@ http://localhost:3000
 ├── image-3.png
 ├── image-4.png
 ├── image-5.png
+├── image-6.png
+├── image-7.png
 └── image.png
 ```
 
