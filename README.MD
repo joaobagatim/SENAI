@@ -355,6 +355,9 @@ BUG-04 — Campos obrigatórios da troca de óleo não são corretamente validad
 BUG-05 — Observações acima de 300 caracteres podem ser aceitas
 BUG-06 — Revisão concluída pode ser editada e retornar para rascunho
 BUG-07 — Capacidade do tanque exibida na UI diverge da API
+BUG-08 — Busca de veículos diferencia letras maiúsculas e minúsculas
+BUG-09 — Ordenação crescente por ano não é aplicada corretamente
+BUG-10 — Contador de favoritos não é decrementado ao desfavoritar um veículo
 ```
 
 Os detalhes, passos para reprodução, resultados esperados, resultados obtidos e evidências estão disponíveis em:
