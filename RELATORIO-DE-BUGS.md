@@ -17,6 +17,7 @@
 
 * **Evidência:**
   Print da tela após a pesquisa por **“Ferrari”**, demonstrando o catálogo vazio sem mensagem de feedback. Evidência adicional pelo DevTools mostrando o elemento `empty-state` ainda com o atributo `hidden`. O comportamento também pode ser reproduzido pelo teste automatizado de busca sem resultados no Playwright.
+  ![alt text](image-4.png)
 
 <!-- ========== -->
 
@@ -105,6 +106,7 @@ Nenhuma mensagem de validação é apresentada nesses casos.
 
 * **Evidência:**
   Prints do histórico exibindo as revisões `12001 km` e `12002 km` com status **“Concluída”**, mesmo com dados obrigatórios da troca de óleo ausentes. Os testes automatizados no Playwright também falham ao esperar a exibição da mensagem de validação.
+  ![alt text](image-5.png)
 
 <!-- ========== -->
 
