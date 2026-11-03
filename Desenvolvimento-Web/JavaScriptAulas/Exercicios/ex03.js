@@ -1,0 +1,1 @@
+// 3 – Utilização o switch-case, implemente uma função que possa receber dois números e uma variável que definirá a operação a ser executada (adição, subtração, multiplicação ou divisão). Imprima no console.log o resultado.

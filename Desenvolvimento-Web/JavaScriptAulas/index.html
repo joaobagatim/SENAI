@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em botões</title>
+
+    <style>
+        .square{
+            height: 100px;
+            width: 100px;
+            border: solid 2px black;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <button onclick="alert('Botão clicado!')">Clique Aqui</button>
+    <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+    <button id="btn">Mostrar Externo</button>
+
+    <br><br>
+
+    <p id="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eligendi, quis placeat officiis adipisci deleniti quisquam doloremque, pariatur tenetur quo qui commodi voluptate optio ullam distinctio debitis veniam totam odio!</p>
+
+    <button id="mostrar">Mostrar</button>
+    <button id="ocultar">Ocultar</button>
+
+    <br><br>
+    <h2 id="texto2">Olá Mundo</h2>
+    <button id="altera">Altera Texto</button>
+    <button id="cor">Altera Cor</button>
+
+    <br><br>
+
+    <div id="quadrado" class="square"></div>
+    <button id="azul">Azul</button>
+    <button id="verde">Verde</button>
+    <button id="amarelo">Amarelo</button>
+
+
+    <script>
+        function mostrarAlerta(){
+            alert('Alerta mostrado!')
+        }
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

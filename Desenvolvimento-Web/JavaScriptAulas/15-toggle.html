@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        #conteudo, .btn{
+            width: 80%;
+        }
+
+        .btn{
+            cursor: pointer;
+        }
+
+        .content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alterna()" class="btn">Pergunta 1</button>
+    <div id="conteudo" class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, laboriosam non eligendi adipisci beatae saepe? Consequuntur quisquam earum nostrum cumque dicta excepturi quo commodi magnam, saepe maiores dignissimos ducimus ipsam.</p>
+    </div>
+
+    <script>
+        function alterna(){
+            let elemento = document.getElementById("conteudo");
+            elemento.classList.toggle("content")
+        }
+    </script>
+</body>
+</html>

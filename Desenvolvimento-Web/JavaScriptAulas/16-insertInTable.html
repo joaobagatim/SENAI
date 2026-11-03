@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo dados em tabela</title>
+    <style>
+        table{
+            width: 50%;
+            margin-top: 40px;
+        }
+
+        th{
+            background: #000;
+            color: #ddd;
+        }
+
+        tr:nth-child(odd){
+            background-color: #ddd;
+        }
+
+        table th:first-child{
+            width: 80%;
+        }
+
+        table td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form name="addForm">
+        <label>Nome:</label>
+        <input type="text" name="nome" maxlength="40">
+        <br><br>
+        <label>Sexo</label>
+        <select name="sexo" id="sexo">
+            <option value="default">Escolha uma opção</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <br><br>
+        <input type="button" value="Adicionar" onclick="adicionar()">
+    </form>
+
+    <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+        </thead>
+
+        <tbody id="dados"></tbody>
+    </table>
+
+    <script>
+        function adicionar(){
+            let linha = document.createElement('tr');
+            linha.innerHTML = 
+                "<td>" + document.addForm.nome.value + "</td>"
+            +   "<td>" + document.addForm.sexo.value + "</td>";
+
+            document.getElementById("dados").appendChild(linha)
+
+            document.addForm.nome.value = '';
+            document.addForm.sexo.value = 'default';
+            document.addForm.nome.focus();
+            
+        }
+    </script>
+</body>
+</html>

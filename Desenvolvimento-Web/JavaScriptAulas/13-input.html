@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inoput JS</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <br>
+    <button onclick="mostrarNome()" style="margin-top: 10px;">Enviar</button>
+    <br>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarNome(){
+            const nome = document.getElementById("nome").value;
+            document.getElementById("resultado").innerText = "Olá " + nome + "!"
+        }
+    </script>
+</body>
+</html>

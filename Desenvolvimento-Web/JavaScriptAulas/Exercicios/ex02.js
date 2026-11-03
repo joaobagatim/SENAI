@@ -1,0 +1,1 @@
+// 2 – Crie uma tabuada de multiplicação de um número qualquer que deverá ser passado como parâmetro em uma função de forma que imprima a multiplicação deste número de 1 até 10.
