@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:14
+    container_name: postgres_prova_pratica
+    environment:
+      POSTGRES_DB: prova_pratica
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: senai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_prova_pratica_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_prova_pratica_data:
