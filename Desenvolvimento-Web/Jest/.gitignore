@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+
+# executar:
+# npm -y init
+# o npm i jest
+# alterar no arquivo packege.json em 'scripts/test' para 'jest --coverage'
