@@ -1,0 +1,57 @@
+{
+  "id": "T5",
+  "users": 60,
+  "rate": 5,
+  "seconds": 90,
+  "started": "2026-11-06T23:55:02Z",
+  "ended": "2026-11-06T23:56:32Z",
+  "stats": {
+    "current_response_time_percentiles": {
+      "response_time_percentile_0.5": 45,
+      "response_time_percentile_0.95": 64
+    },
+    "errors": [],
+    "fail_ratio": 0,
+    "state": "stopped",
+    "stats": [
+      {
+        "avg_content_length": 5645,
+        "avg_response_time": 49.72635033019244,
+        "current_fail_per_sec": 0,
+        "current_rps": 18.9,
+        "max_response_time": 386,
+        "median_response_time": 47,
+        "method": "GET",
+        "min_response_time": 13,
+        "name": "/users",
+        "num_failures": 0,
+        "num_requests": 1669,
+        "response_time_percentile_0.95": 110,
+        "response_time_percentile_0.99": 210,
+        "total_fail_per_sec": 0,
+        "total_rps": 18.557525750529862
+      },
+      {
+        "avg_content_length": 5645,
+        "avg_response_time": 49.72635033019244,
+        "current_fail_per_sec": 0,
+        "current_rps": 18.9,
+        "max_response_time": 386,
+        "median_response_time": 47,
+        "method": "",
+        "min_response_time": 13,
+        "name": "Aggregated",
+        "num_failures": 0,
+        "num_requests": 1669,
+        "response_time_percentile_0.95": 110,
+        "response_time_percentile_0.99": 210,
+        "total_fail_per_sec": 0,
+        "total_rps": 18.557525750529862
+      }
+    ],
+    "total_fail_per_sec": 0,
+    "total_rps": 18.9,
+    "user_count": 0
+  },
+  "duration_measured_seconds": 90.0
+}

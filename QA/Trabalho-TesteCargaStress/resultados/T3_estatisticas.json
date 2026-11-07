@@ -1,0 +1,64 @@
+{
+  "id": "T3",
+  "users": 25,
+  "rate": 5,
+  "seconds": 60,
+  "started": "2026-11-06T23:52:38Z",
+  "ended": "2026-11-06T23:53:38Z",
+  "stats": {
+    "current_response_time_percentiles": {
+      "response_time_percentile_0.5": 36,
+      "response_time_percentile_0.95": 150
+    },
+    "errors": [
+      {
+        "error": "RemoteDisconnected('Remote end closed connection without response')",
+        "method": "GET",
+        "name": "/users",
+        "occurrences": 2
+      }
+    ],
+    "fail_ratio": 0.004158004158004158,
+    "state": "stopped",
+    "stats": [
+      {
+        "avg_content_length": 5621.528066528066,
+        "avg_response_time": 72.33627962472262,
+        "current_fail_per_sec": 0,
+        "current_rps": 8.3,
+        "max_response_time": 1307,
+        "median_response_time": 38,
+        "method": "GET",
+        "min_response_time": 13,
+        "name": "/users",
+        "num_failures": 2,
+        "num_requests": 481,
+        "response_time_percentile_0.95": 200,
+        "response_time_percentile_0.99": 1300,
+        "total_fail_per_sec": 0.03332303365528646,
+        "total_rps": 8.014189594096393
+      },
+      {
+        "avg_content_length": 5621.528066528066,
+        "avg_response_time": 72.33627962472262,
+        "current_fail_per_sec": 0,
+        "current_rps": 8.3,
+        "max_response_time": 1307,
+        "median_response_time": 38,
+        "method": "",
+        "min_response_time": 13,
+        "name": "Aggregated",
+        "num_failures": 2,
+        "num_requests": 481,
+        "response_time_percentile_0.95": 200,
+        "response_time_percentile_0.99": 1300,
+        "total_fail_per_sec": 0.03332303365528646,
+        "total_rps": 8.014189594096393
+      }
+    ],
+    "total_fail_per_sec": 0,
+    "total_rps": 8.3,
+    "user_count": 0
+  },
+  "duration_measured_seconds": 60.0
+}

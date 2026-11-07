@@ -1,0 +1,272 @@
+[
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:51:50Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:51:50Z",
+      0
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:51:50Z",
+      160.0
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:51:50Z",
+      390.0
+    ],
+    "time": "2026-11-06T23:51:50Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:51:50Z",
+      188.39
+    ],
+    "user_count": [
+      "2026-11-06T23:51:50Z",
+      6
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:51:55Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:51:55Z",
+      2.6
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:51:55Z",
+      84
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:51:55Z",
+      310.0
+    ],
+    "time": "2026-11-06T23:51:55Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:51:55Z",
+      102.2
+    ],
+    "user_count": [
+      "2026-11-06T23:51:55Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:00Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:00Z",
+      2.8
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:00Z",
+      52
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:00Z",
+      150.0
+    ],
+    "time": "2026-11-06T23:52:00Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:00Z",
+      75.9
+    ],
+    "user_count": [
+      "2026-11-06T23:52:00Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:05Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:05Z",
+      3.1
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:05Z",
+      48
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:05Z",
+      58
+    ],
+    "time": "2026-11-06T23:52:05Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:05Z",
+      66.18
+    ],
+    "user_count": [
+      "2026-11-06T23:52:05Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:10Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:10Z",
+      3.1
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:10Z",
+      48
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:10Z",
+      65
+    ],
+    "time": "2026-11-06T23:52:10Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:10Z",
+      61.37
+    ],
+    "user_count": [
+      "2026-11-06T23:52:10Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:15Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:15Z",
+      3.4
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:15Z",
+      50
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:15Z",
+      65
+    ],
+    "time": "2026-11-06T23:52:15Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:15Z",
+      57.95
+    ],
+    "user_count": [
+      "2026-11-06T23:52:15Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:20Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:20Z",
+      3.6
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:20Z",
+      39
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:20Z",
+      58
+    ],
+    "time": "2026-11-06T23:52:20Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:20Z",
+      55.55
+    ],
+    "user_count": [
+      "2026-11-06T23:52:20Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:25Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:25Z",
+      3.2
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:25Z",
+      39
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:25Z",
+      100.0
+    ],
+    "time": "2026-11-06T23:52:25Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:25Z",
+      54.76
+    ],
+    "user_count": [
+      "2026-11-06T23:52:25Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:30Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:30Z",
+      3.3
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:30Z",
+      50
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:30Z",
+      100.0
+    ],
+    "time": "2026-11-06T23:52:30Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:30Z",
+      54.83
+    ],
+    "user_count": [
+      "2026-11-06T23:52:30Z",
+      10
+    ]
+  },
+  {
+    "current_fail_per_sec": [
+      "2026-11-06T23:52:33Z",
+      0
+    ],
+    "current_rps": [
+      "2026-11-06T23:52:33Z",
+      3.2
+    ],
+    "response_time_percentile_0.5": [
+      "2026-11-06T23:52:33Z",
+      51
+    ],
+    "response_time_percentile_0.95": [
+      "2026-11-06T23:52:33Z",
+      100.0
+    ],
+    "time": "2026-11-06T23:52:33Z",
+    "total_avg_response_time": [
+      "2026-11-06T23:52:33Z",
+      54.03
+    ],
+    "user_count": [
+      "2026-11-06T23:52:33Z",
+      0
+    ]
+  }
+]
